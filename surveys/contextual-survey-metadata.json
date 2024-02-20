@@ -1,0 +1,39 @@
+[
+    {
+        "uniqueId": "d27d24da-f789-45e3-83af-7ebaeade75c1",
+        "startDate": "2023-10-30T09:00:00-07:00",
+        "endDate": "2023-12-04T09:00:00-07:00",
+        "description": "Tell us about your target platform by taking this 3-question survey!",
+        "snoozeForMinutes": 1440,
+        "samplingRate": 0.1,
+        "excludeDashTools": [
+        ],
+        "conditions": [
+            {
+                "field": "logFileStats.recordCount",
+                "operator": ">=",
+                "value": 1500
+            }
+        ],
+        "buttons": [
+            {
+                "buttonText": "Take Survey",
+                "action": "accept",
+                "url": "https://google.qualtrics.com/jfe/form/SV_3ERHkWXZmE19WzI",
+                "promptRemainsVisible": false
+            },
+            {
+                "buttonText": "Dismiss",
+                "action": "dismiss",
+                "url": null,
+                "promptRemainsVisible": false
+            },
+            {
+                "buttonText": "More Info",
+                "action": "snooze",
+                "url": "https://docs.flutter.dev/reference/user-surveys",
+                "promptRemainsVisible": true
+            }
+        ]
+    }
+]
